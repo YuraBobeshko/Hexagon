@@ -8,4 +8,4 @@ include_directories(Hexxagon)
 add_executable(Hexxagon
         Hexxagon/Game.cpp
         Hexxagon/Game.h
-        Hexxagon/Hexxagon.cpp)
+        Hexxagon/Hexxagon.cpp Hexxagon/Field.cpp)
