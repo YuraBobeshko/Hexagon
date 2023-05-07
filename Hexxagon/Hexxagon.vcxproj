@@ -133,7 +133,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Hexxagon.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Сonstants.h.cpp" />
+    <ClCompile Include="Сonstants.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bot.h" />

@@ -1,0 +1,1 @@
+const int sizeOfElement = 3;

@@ -1,1 +1,3 @@
-#include "Bot.h"
+class Bot
+{
+};

@@ -1,3 +1,1 @@
-#pragma once
-
-const int sizeOfElement = 3;
+#include "Ñonstants.cpp"

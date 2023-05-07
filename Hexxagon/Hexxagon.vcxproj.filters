@@ -30,7 +30,7 @@
     <ClCompile Include="Field.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Сonstants.h.cpp">
+    <ClCompile Include="Сonstants.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Enums.cpp">
