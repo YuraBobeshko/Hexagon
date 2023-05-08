@@ -18,7 +18,7 @@
     <ClCompile Include="Hexxagon.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="Board.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Bot.cpp">
@@ -36,9 +36,12 @@
     <ClCompile Include="Enums.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
+    <ClInclude Include="Board.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Bot.h">
@@ -54,6 +57,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="Enums.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,5 +1,8 @@
 #ifndef MY_ENUMS_H
 #define MY_ENUMS_H
+
+#include <SFML/Graphics.hpp>
+
 enum TypeOfField
 {
     EMPTY,
@@ -9,7 +12,7 @@ enum TypeOfField
     PLAYER4,
     PLAYER5,
     PLAYER6,
-    blocked
+    BLOCKED
 };
 
 #endif // MY_ENUMS_H

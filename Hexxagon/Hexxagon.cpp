@@ -1,11 +1,11 @@
-﻿#include "Game.h"
+﻿#include "Board.h"
 
 int main()
 {
-	Game game1(2, 2);
-	//Game game2(3, 2);
-	//Game game3(4, 2);
-	//Game game4(5, 2);
+	Board game2(3, 2);
+	Board game3(4, 2);
+	Board game4(5, 2);
+	Board game5(6, 2);
 
 	return 0;
 }
