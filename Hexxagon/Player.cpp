@@ -1,3 +1,5 @@
+#ifndef MY_Player_H
+#define MY_Player_H
 #include <SFML/Graphics.hpp>
 
 #include "Font.h"
@@ -9,13 +11,15 @@ class Player
 {
 public:
 	TypeOfField type;
+    PlayerTypes playerType;
 
 	MyFont font;
 
-    Player() : type(TypeOfField::EMPTY) {}
+    Player() : type(TypeOfField::EMPTY), playerType(PlayerTypes::BOT) {}
 
-	Player(TypeOfField t) {
+	Player(TypeOfField t, PlayerTypes p) {
 		type = t;
+        playerType = p;
 	}
 
 	sf::Text render() {
@@ -26,7 +30,7 @@ public:
 		return text;
 	}
 
-    std::string getFieldName(TypeOfField field)
+   static std::string getFieldName(TypeOfField field)
     {
         switch (field)
         {
@@ -46,5 +50,6 @@ public:
             return "Unknown";
         }
     }
-};
+    };
 
+#endif // MY_ENUMS_H

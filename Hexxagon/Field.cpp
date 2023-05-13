@@ -1,3 +1,6 @@
+#ifndef FIELD
+#define FIELD
+
 #include <string> 
 
 #include <SFML/Graphics.hpp>
@@ -70,3 +73,4 @@ public:
     }
 };
 
+#endif 

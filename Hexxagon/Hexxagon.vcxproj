@@ -137,8 +137,11 @@
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="Font.cpp" />
     <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Hexxagon.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Struct.cpp" />
+    <ClCompile Include="Window.cpp" />
     <ClCompile Include="Сonstants.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -148,7 +151,10 @@
     <ClInclude Include="Field.h" />
     <ClInclude Include="Font.h" />
     <ClInclude Include="Board.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Struct.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

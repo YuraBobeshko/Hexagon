@@ -1,3 +1,6 @@
+#ifndef BOARD
+#define BOARD
+
 #include <iostream>
 #include <vector>
 
@@ -103,7 +106,7 @@ public:
 		listOfPlayer.resize(count);
 		for (int i = 0; i < count; i++)
 		{
-			Player player(TypeOfField(i + 1));
+			Player player(TypeOfField(i + 1), BOT);
 			listOfPlayer[i] = player;
 		}
 	}
@@ -184,3 +187,5 @@ public:
 		}
 	}
 };
+
+#endif 

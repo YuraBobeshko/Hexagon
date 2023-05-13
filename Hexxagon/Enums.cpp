@@ -15,4 +15,16 @@ enum TypeOfField
     BLOCKED
 };
 
+enum ItemTypes
+{
+    NUMBER_OF_PLAYER,
+    TYPE_OF_PLAYER,
+};
+
+enum PlayerTypes
+{
+   REAL_PLAYER,
+    BOT,
+};
+
 #endif // MY_ENUMS_H
