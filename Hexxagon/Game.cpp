@@ -1,12 +1,10 @@
 #pragma once
-
 #include "Player.h"
 #include "Board.h"
+
 #include "Struct.h"
 #include "Enums.h"
 
-
-// newObjectsToDraw.emplace_back(log(elem->value, x, y));
 
 class Game
 {
@@ -23,21 +21,12 @@ private:
 	
 public:
 
-	Game() {
-		//Board game2(3, 2);
-		//Board game3(4, 2);
-		//Board game4(5, 2);
-		//Board game5(6, 2);
+	Game() : listOfPlayer({ new Player(TypeOfField(1), REAL_PLAYER), new Player(TypeOfField(2), BOT) }) {
 		init();
 	}
 
 	void init()
 	{
-		Player* player1 = new Player(PLAYER1, PlayerTypes::REAL_PLAYER);
-		Player* player2 = new Player(PLAYER2, PlayerTypes::BOT);
-		listOfPlayer.emplace_back(player1);
-		listOfPlayer.emplace_back(player2);
-		createButtonsCountOfPlayer();
 		renderWindow();
 	}
 
@@ -78,14 +67,18 @@ public:
 			}
 			if (bounds.contains(x, y)) {
 				std::string identifier = elem->key;
-				listOfPlayer.clear();
+				
 				if (identifier == "ñountOfPlayer") {
 					handleClickOnCountOfUser(elem);
+					break;
 				}
 				else if (identifier == "player") {
-					std::string value = elem->value;
-					int playerIndex = std::stoi(value.substr(value.length() - 1)) - 1;
-					Player* player = listOfPlayer[playerIndex];
+					handleClickOnUser(elem);
+					break;
+				}
+				else if (identifier == "Play") {
+					handleClickOnPlay();
+					break;
 				}
 			}
 		}
@@ -97,17 +90,37 @@ public:
 
 	void handleClickOnCountOfUser(DrawableItem* elem) {
 		int value = std::stoi(elem->value);
+		
+		if (listOfPlayer.size() == value)
+			return;
 
-		for (int i = 0; i < value; i++)
+		listOfPlayer.resize(value);
+
+		for (int i = 0; i < listOfPlayer.size(); i++)
 		{
-			Player* player = new Player(TypeOfField(i + 1), PlayerTypes::BOT);
-			listOfPlayer.emplace_back(player);
+			Player* player = new Player(TypeOfField(i + 1), i == 0 ? REAL_PLAYER : BOT);
+			listOfPlayer[i] = player;
 		}
+	}
+
+	void handleClickOnUser(DrawableItem* elem) {
+		int playerIndex = std::stoi(elem->value) - 1;
+
+		Player* player = listOfPlayer[playerIndex];
+
+		listOfPlayer[playerIndex] = new Player(player->type, player->playerType == BOT ? REAL_PLAYER : BOT);
+	}
+
+	void handleClickOnPlay() {
+		window.close();
+
+		Board board(5, listOfPlayer);
 	}
 
 	void renderAll() {
 		createButtonsCountOfPlayer();
 		createButtonsListPlayer();
+		createButtonsPlay();
 
 		for (auto drawable : objectsToDraw) {
 			window.draw(*drawable->item);
@@ -127,20 +140,31 @@ public:
 	}
 
 	void createButtonsListPlayer() {
-		sf::Text* textCountOfPlayer = createText("Number       Player       Bot", TEXT_SIZE, 10, LINE_SIZE * 3);
-
+		sf::Text* textCountOfPlayer = createText("Number      type", TEXT_SIZE, 10, LINE_SIZE * 3);
 
 		objectsToDraw.emplace_back(new DrawableItem{ "textCountOfPlayer", TYPE_OF_PLAYER, "textCountOfPlayer", textCountOfPlayer });
 
-		for (size_t i = 0; i < listOfPlayer.size(); i++)
+		if (listOfPlayer.size() == 0)
+			return;
+
+		for (int i = 0; i < listOfPlayer.size(); i++)
 		{
+			if (!listOfPlayer[i])
+				return;
 
 			std::string name = listOfPlayer[i]->getFieldName(listOfPlayer[i]->type);
-				
-			sf::Text* textOfPlayer = createText(name, TEXT_SIZE, 10, LINE_SIZE * (i + 4));
-			
-			objectsToDraw.emplace_back(new DrawableItem{ "player", TYPE_OF_PLAYER, "player" + i + 1, textOfPlayer });
+			std::string type = listOfPlayer[i]->playerType == PlayerTypes::REAL_PLAYER ? "User" : "Bot";
+
+			sf::Text* textOfPlayer = createText(name + "       " + type, TEXT_SIZE, 10, LINE_SIZE * (i + 4));
+
+			objectsToDraw.emplace_back(new DrawableItem{ "player", TYPE_OF_PLAYER, std::to_string(1 + i), textOfPlayer });
 		}
+	}
+
+	void createButtonsPlay() {
+		sf::Text* textCountOfPlayer = createText("PLAY", TEXT_SIZE, 10, 0);
+
+		objectsToDraw.emplace_back(new DrawableItem{ "Play", TYPE_OF_PLAYER, "Play", textCountOfPlayer });
 	}
 
 	sf::Text* createText(std::string string, int size, int x, int y) {
@@ -149,13 +173,5 @@ public:
 		text->setPosition(x, y);
 
 		return text;
-	}
-
-	DrawableItem* log(std::string text, int x, int y) {
-		sf::Text* clickText = new sf::Text("(" + std::to_string(x) + ", " + std::to_string(y) + ") " + text, font.get());
-		clickText->setFillColor(sf::Color::Green);
-		clickText->setPosition(400.f, 10.f);
-
-		return new DrawableItem{ "log", NUMBER_OF_PLAYER, "log", clickText };
 	}
 };

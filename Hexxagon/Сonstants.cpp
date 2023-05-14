@@ -11,7 +11,7 @@ const int LEFT_SPACE = 50;
 const int FONT_SIZE_OF_USER_FIELD_STATE = 25;
 const int SIZE_OF_USER_FIELD_STATE = FONT_SIZE_OF_USER_FIELD_STATE * 2;
 
-const int HEX_SIZE = 50;
+const int HEX_SIZE = 30;
 const float HEX_HEIGHT = HEX_SIZE * 2 * 0.866f;
 const float HEX_WIDTH = HEX_SIZE * 1.5f;
 

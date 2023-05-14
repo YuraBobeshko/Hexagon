@@ -24,7 +24,7 @@ enum ItemTypes
 enum PlayerTypes
 {
    REAL_PLAYER,
-    BOT,
+   BOT,
 };
 
 #endif // MY_ENUMS_H

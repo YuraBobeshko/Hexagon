@@ -12,6 +12,7 @@
 
 #include "Enums.h"
 #include "Constans.h"
+#include "Struct.h"
 
 class Board
 {
@@ -24,18 +25,19 @@ private:
 
 	std::vector<std::vector<Field>>map;
 
-	std::vector<Player>listOfPlayer;
+	std::vector<Player*>listOfPlayer;
 
 	std::vector<sf::Drawable*> objectsToDraw;
 
 	int size;
 
 public:
-	Board(int s, int countOfPlayer)
+	Board(int s, std::vector<Player*> l)
 	{
 		size = s;
+		listOfPlayer = l;
 		std::cout << "size: " << size << std::endl;
-		std::cout << "countOfPlayer: " << countOfPlayer << std::endl;
+		std::cout << "countOfPlayer: " << l.size() << std::endl;
 		
 		init();
 	}
@@ -44,7 +46,6 @@ public:
 	{
 		createVec();
 		fillVec();
-        createListOfPlayer();
 		renderWindow();
 	}
 
@@ -101,16 +102,6 @@ public:
 		map[midX + 1][midY + (size%2==0 ? +1 : -1)] = field;
 	}
 
-	void createListOfPlayer() {
-		int count = 2;
-		listOfPlayer.resize(count);
-		for (int i = 0; i < count; i++)
-		{
-			Player player(TypeOfField(i + 1), BOT);
-			listOfPlayer[i] = player;
-		}
-	}
-
 	void renderWindow() {
 		window.create(sf::VideoMode(SCREEN_SIZE_X, SCREEN_SIZE_Y), "SFML window");
 
@@ -142,15 +133,30 @@ public:
 		clickText->setFillColor(sf::Color::Green);
 		clickText->setPosition(400.f, 10.f);
 		objectsToDraw.push_back(clickText);
+
+
+		for (std::vector<Field> elem : map) {
+			for (Field item : elem) {
+				sf::FloatRect bounds = item.item->getLocalBounds();
+				sf::Transformable* transformable = dynamic_cast<sf::Transformable*>(item.item);
+				if (transformable != nullptr) {
+					bounds.left += transformable->getPosition().x;
+					bounds.top += transformable->getPosition().y;
+				}
+				if (bounds.contains(x, y)) {
+
+				}
+			}
+		}
 	}
 
 	void renderAll() {
+		renderButtons();
+		renderUsers();
+
 		for (auto drawable : objectsToDraw) {
 			window.draw(*drawable);
 		}
-
-		renderButtons();
-		renderUsers();
 	}
 
 	void renderButtons() {
@@ -173,8 +179,7 @@ public:
 				else if (col > 0) {
 					x += space * 2;
 				}
-
-				window.draw(map[row][col].render(x, y));
+				window.draw(*map[row][col].render(x, y));
 			}
 		}
 
@@ -183,7 +188,7 @@ public:
 	void renderUsers() {
 		for (size_t i = 0; i < listOfPlayer.size(); i++)
 		{
-			window.draw(listOfPlayer[i].render());
+			window.draw(listOfPlayer[i]->render());
 		}
 	}
 };

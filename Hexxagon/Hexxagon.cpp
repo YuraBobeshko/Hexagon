@@ -3,10 +3,8 @@
 
 int main()
 {
-	
-	//Game Game;
-	Board board(5, 2);
+    Game game;
 
-	return 0;
+    return 0;
 }
 

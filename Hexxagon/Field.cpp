@@ -14,12 +14,15 @@ class Field
 public:
     TypeOfField type;
     bool selected;
+    sf::ConvexShape* item;
     Field() : type(TypeOfField::EMPTY), selected(false) {}
 
     Field(TypeOfField t, bool s)
     {
         type = t;
         selected = s;
+        item = createHexagon();
+
     }
 
     std::string getName() {
@@ -31,23 +34,24 @@ public:
         }
     }
 
-    sf::ConvexShape render(int x, int y) {
-        return createHexagon(x, y);
+    sf::ConvexShape* render(int x, int y) {
+        item->setPosition(x, y);
+
+        return item;
     }
 
-    sf::ConvexShape createHexagon(float x, float y) {
-        sf::ConvexShape hexagon(6);
-        hexagon.setPoint(0, sf::Vector2f(HEX_SIZE, 0));
-        hexagon.setPoint(1, sf::Vector2f(HEX_SIZE / 2, HEX_HEIGHT / 2));
-        hexagon.setPoint(2, sf::Vector2f(-HEX_SIZE / 2, HEX_HEIGHT / 2));
-        hexagon.setPoint(3, sf::Vector2f(-HEX_SIZE, 0));
-        hexagon.setPoint(4, sf::Vector2f(-HEX_SIZE / 2, -HEX_HEIGHT / 2));
-        hexagon.setPoint(5, sf::Vector2f(HEX_SIZE / 2, -HEX_HEIGHT / 2));
-        hexagon.setPosition(x, y);
-        hexagon.setFillColor(getColor(type));
+    sf::ConvexShape* createHexagon() {
+        sf::ConvexShape* hexagon = new sf::ConvexShape(6);
+        hexagon->setPoint(0, sf::Vector2f(HEX_SIZE, 0));
+        hexagon->setPoint(1, sf::Vector2f(HEX_SIZE / 2, HEX_HEIGHT / 2));
+        hexagon->setPoint(2, sf::Vector2f(-HEX_SIZE / 2, HEX_HEIGHT / 2));
+        hexagon->setPoint(3, sf::Vector2f(-HEX_SIZE, 0));
+        hexagon->setPoint(4, sf::Vector2f(-HEX_SIZE / 2, -HEX_HEIGHT / 2));
+        hexagon->setPoint(5, sf::Vector2f(HEX_SIZE / 2, -HEX_HEIGHT / 2));
 
         return hexagon;
     }
+
 
     sf::Color getColor(TypeOfField type) {
         switch (type) {
@@ -68,7 +72,7 @@ public:
         case BLOCKED:
             return sf::Color::Black;
         default:
-            return sf::Color::White;
+            return sf::Color::Red;
         }
     }
 };
