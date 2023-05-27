@@ -79,9 +79,9 @@ public:
         switch (selection) {
         case UNSELECTED:
             return sf::Color::Black;
-        case SELECTED:
-            return sf::Color::Green;
         case POSSIBLE_TO_MOVE:
+            return sf::Color::Green;
+        case SELECTED:
             return sf::Color::Blue;
         default:
             return sf::Color::Black;

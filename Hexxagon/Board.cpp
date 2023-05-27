@@ -188,22 +188,30 @@ public:
 
 	void handleClickOnField(Field* item, int x, int y)
 	{
-		map[x][y]->type = PLAYER1;
+		Player* player = listOfPlayer[activePlayer];
 
-		for (Player* player : listOfPlayer)
+		if (player->type == item->type || item->selection == POSSIBLE_TO_MOVE)
 		{
-			if (player->type == item->type)
-			{
-				Position pos = Position{ x, y };
+			Position pos = Position{ x, y };
 
-				player->makeMove(pos, map);
-
-				sf::Text* clickText = new sf::Text(std::to_string(x) + "  " + std::to_string(y), font.get());
-				clickText->setFillColor(sf::Color::Green);
-				clickText->setPosition(400.f, 10.f);
-				objectsToDraw.push_back(clickText);
-				
+			if (player->makeMove(pos, map)) {
+				nextPlayer();
 			}
+
+			sf::Text* clickText = new sf::Text(std::to_string(x) + "  " + std::to_string(y) + " " + map[x][y]->getName(), font.get());
+			clickText->setFillColor(sf::Color::Green);
+			clickText->setPosition(400.f, 10.f);
+			objectsToDraw.push_back(clickText);
+		}
+		
+	}
+
+	void nextPlayer() {
+		if (activePlayer + 1 >= listOfPlayer.size()) {
+			activePlayer = 0;
+		}
+		else {
+			activePlayer++;
 		}
 	}
 

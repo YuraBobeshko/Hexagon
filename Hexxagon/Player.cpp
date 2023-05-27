@@ -57,29 +57,34 @@ public:
         }
     }
 
-   void makeMove(Position p, std::vector<std::vector<Field*>>& map) {
+   bool makeMove(Position p, std::vector<std::vector<Field*>>& map) {
+       bool isNextPlayer = false;
+
        switch (map[p.x][p.y]->selection)
        {
        case UNSELECTED:
            unselect(map);
+           map[p.x][p.y]->selection = SELECTED;
            selectPossibleMoves(p, map);
            break;
        case SELECTED:
            map[p.x][p.y]->selection = UNSELECTED;
+           unselect(map);
            break;
        case POSSIBLE_TO_MOVE:
+           isNextPlayer = true;
+           map[p.x][p.y]->selection = UNSELECTED;
+           map[p.x][p.y]->type = type;
+           unselect(map);
            break;
        default:
            break;
        }
+
+       return isNextPlayer;
    }
 
    void selectPossibleMoves(Position p, std::vector<std::vector<Field*>>& map) {
-       //map[p.x][p.y]->selection = SELECTED;
-       //map[p.x][p.y]->createHexagon();
-
-       map[p.x][p.y]->type = EMPTY;
-
        Position firstRight = Position{ p.x , p.y + 1 };
        Position firstLeft = Position{ p.x , p.y - 1 };
 
@@ -96,7 +101,6 @@ public:
         Position thirdRightTop = getTopPosition(firstRight, map);
         Position thirdLeftTop = getTopPosition(firstLeft, map);
        
-
        
         Position firstBottom = Position{ p.x + 2, getYPosition(p, Position{p.x + 2, p.y}, map) };
         Position secondBottom = Position{ p.x + 4, getYPosition(p, Position{p.x + 4, p.y}, map) };
@@ -128,7 +132,7 @@ public:
            if (checkBounds(map, moves[i])) {
                if (map[moves[i].x][moves[i].y]->type == EMPTY)
                {
-                   map[moves[i].x][moves[i].y]->selection = SELECTED;
+                   map[moves[i].x][moves[i].y]->selection = POSSIBLE_TO_MOVE;
                }
            }
        }
