@@ -80,29 +80,47 @@ public:
 
        map[p.x][p.y]->type = EMPTY;
 
-       Position firstTop = Position{ p.x - 2, getYPosition(p, Position{p.x - 2, p.y}, map) };
-       Position secondTop = Position{ p.x - 4, getYPosition(p, Position{p.x - 4, p.y}, map) };
-
-       Position firstBottom = Position{ p.x + 2, getYPosition(p, Position{p.x + 2, p.y}, map) };
-       Position secondBottom = Position{ p.x + 4, getYPosition(p, Position{p.x + 4, p.y}, map) };
-
        Position firstRight = Position{ p.x , p.y + 1 };
        Position firstLeft = Position{ p.x , p.y - 1 };
 
-       Position firstRightBottom = Position{ p.x + 1 , getYRightBottomPosition(p, map) + 1 };
-       Position firstLeftBottom = Position{ p.x + 1, getYRightBottomPosition(p, map) };
+       
+        Position firstTop = Position{ p.x - 2, getYPosition(p, Position{p.x - 2, p.y}, map) };
+        Position secondTop = Position{ p.x - 4, getYPosition(p, Position{p.x - 4, p.y}, map) };
 
-       //Position secondRightBottom = Position{ firstRightBottom.x + 2 , getYPosition(firstRightBottom, Position{firstRightBottom.x + 2, firstRightBottom.y}, map) };
-       Position secondRightBottom = getYBottomPosition(firstRightBottom, map);
-       Position secondLeftBottom = Position{ firstRightBottom.x + 2, getYPosition(firstLeftBottom, Position{firstLeftBottom.x + 2, firstLeftBottom.y}, map) };
+        Position firstRightTop = Position{ p.x - 1 , getTopSidePosition(p, map) + 1 };
+        Position firstLeftTop = Position{ p.x - 1, getTopSidePosition(p, map) };
 
+        Position secondRightTop = getTopPosition(firstRightTop, map);
+        Position secondLeftTop = getTopPosition(firstLeftTop, map);
+
+        Position thirdRightTop = getTopPosition(firstRight, map);
+        Position thirdLeftTop = getTopPosition(firstLeft, map);
+       
+
+       
+        Position firstBottom = Position{ p.x + 2, getYPosition(p, Position{p.x + 2, p.y}, map) };
+        Position secondBottom = Position{ p.x + 4, getYPosition(p, Position{p.x + 4, p.y}, map) };
+
+        Position firstRightBottom = Position{ p.x + 1 , getYRightBottomPosition(p, map) + 1 };
+        Position firstLeftBottom = Position{ p.x + 1, getYRightBottomPosition(p, map) };
+
+        Position secondRightBottom = getBottomPosition(firstRightBottom, map);
+        Position secondLeftBottom = getBottomPosition(firstLeftBottom, map);
+
+        Position thirdRightBottom = getBottomPosition(firstRight, map);
+        Position thirdLeftBottom = getBottomPosition(firstLeft, map);
+       
 
        std::vector<Position> moves = { 
-           //firstBottom, secondBottom, 
-           //firstTop, secondTop, 
-           //firstRight, firstLeft, 
-           //firstRightBottom, firstLeftBottom 
-           secondRightBottom, //secondLeftBottom
+           firstTop, secondTop, 
+           firstBottom, secondBottom, 
+           firstRight, firstLeft, 
+           firstRightBottom, firstLeftBottom,
+           secondRightBottom, secondLeftBottom,
+           thirdRightBottom, thirdLeftBottom,
+           thirdRightTop, thirdLeftTop,
+           firstRightTop, firstLeftTop,
+           secondRightTop, secondLeftTop
        };
 
        for (size_t i = 0; i < moves.size(); i++)
@@ -152,8 +170,12 @@ public:
 
    }
 
-   Position getYBottomPosition(Position oldP, std::vector<std::vector<Field*>>& map) {
-       return Position{ oldP.x + 2 , getYPosition(oldP, Position{oldP.x + 2, oldP.y}, map) };
+   Position getBottomPosition(Position oldP, std::vector<std::vector<Field*>>& map) {
+       return Position{ oldP.x + 2, getYPosition(oldP, Position{oldP.x + 2, oldP.y}, map) };
+   }
+
+   Position getTopPosition(Position oldP, std::vector<std::vector<Field*>>& map) {
+       return Position{ oldP.x - 2, getYPosition(oldP, Position{oldP.x - 2, oldP.y}, map) };
    }
 
    int getYRightBottomPosition(Position oldP, std::vector<std::vector<Field*>>& map) {
@@ -177,6 +199,35 @@ public:
 
            if (checkBounds(map, newPLower) && map[oldP.x].size() > map[newPLower.x].size()) {
                if (map[oldP.x].size() == (oldP.y + 1)) {
+                   return newPLower.y;
+               }
+           }
+
+           return oldP.y;
+       }
+   }
+
+   int getTopSidePosition(Position oldP, std::vector<std::vector<Field*>>& map) {
+       int size = 5;
+
+       if (map[oldP.x].size() >= size)
+       {
+           return oldP.y - 1;
+       }
+       else
+       {
+           Position newP = Position{ oldP.x - 1, oldP.y };
+
+           if (checkBounds(map, newP) && map[oldP.x].size() != size) {
+               if (map[oldP.x].size() > map[newP.x].size()) {
+                   return oldP.y - 1;
+               }
+           }
+
+           Position newPLower = Position{ oldP.x - 1, oldP.y - 1 };
+
+           if (checkBounds(map, newPLower) && map[oldP.x].size() < map[newPLower.x].size()) {
+               if (map[oldP.x].size() == (oldP.y - 1)) {
                    return newPLower.y;
                }
            }
