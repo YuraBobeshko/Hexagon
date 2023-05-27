@@ -23,9 +23,9 @@ private:
 
 	MyFont font;
 
-	std::vector<std::vector<Field>>map;
+	std::vector<std::vector<Field*>> map;
 
-	std::vector<Player*>listOfPlayer;
+	std::vector<Player*> listOfPlayer;
 
 	std::vector<sf::Drawable*> objectsToDraw;
 
@@ -38,7 +38,7 @@ public:
 		listOfPlayer = l;
 		std::cout << "size: " << size << std::endl;
 		std::cout << "countOfPlayer: " << l.size() << std::endl;
-		
+
 		init();
 	}
 
@@ -88,18 +88,47 @@ public:
 		{
 			for (int j = 0; j < map[i].size(); j++)
 			{
-				Field field(TypeOfField::EMPTY, false);
+				Field* field = new Field(TypeOfField::EMPTY, UNSELECTED);
 				map[i][j] = field;
 			}
 		}
 
+		setEmptyVec();
+		setPlayersVec();
+	}
+
+	void setEmptyVec()
+	{
 		int midX = size + size - 2;
 		int midY = map[midX].size() / 2;
 
-		Field field(TypeOfField::BLOCKED, false);
-		map[midX-2][midY] = field;
-		map[midX+1][midY] = field;
-		map[midX + 1][midY + (size%2==0 ? +1 : -1)] = field;
+		Field* field = new Field(BLOCKED, UNSELECTED);
+		map[midX - 2][midY] = field;
+		map[midX + 1][midY] = field;
+		map[midX + 1][midY + (size % 2 == 0 ? +1 : -1)] = field;
+	}
+
+	void setPlayersVec()
+	{
+		switch (listOfPlayer.size())
+		{
+		case 2:
+			map[0][0] = new Field(TypeOfField::PLAYER1, UNSELECTED);
+			map[size - 1][0] = new Field(TypeOfField::PLAYER1, UNSELECTED);
+			map[size - 1][map[size - 1].size() - 1] = new Field(TypeOfField::PLAYER2, UNSELECTED);
+			break;
+
+		case 3:
+
+			break;
+
+		case 6:
+
+			break;
+
+		default:
+			break;
+		}
 	}
 
 	void renderWindow() {
@@ -127,65 +156,87 @@ public:
 	}
 
 	void handleMouseClick(int x, int y) {
-
 		objectsToDraw.clear();
-		sf::Text* clickText = new sf::Text("Mouse clicked at (" + std::to_string(x) + ", " + std::to_string(y) + ")", font.get());
-		clickText->setFillColor(sf::Color::Green);
-		clickText->setPosition(400.f, 10.f);
-		objectsToDraw.push_back(clickText);
 
-
-		for (std::vector<Field> elem : map) {
-			for (Field item : elem) {
-				sf::FloatRect bounds = item.item->getLocalBounds();
-				sf::Transformable* transformable = dynamic_cast<sf::Transformable*>(item.item);
+		for (int i = 0; i < map.size(); ++i) {
+			std::vector<Field*> elem = map[i];
+			for (int j = 0; j < elem.size(); ++j) {
+				Field* item = elem[j];
+				sf::FloatRect bounds = item->item->getLocalBounds();
+				sf::Transformable* transformable = dynamic_cast<sf::Transformable*>(item->item);
 				if (transformable != nullptr) {
 					bounds.left += transformable->getPosition().x;
 					bounds.top += transformable->getPosition().y;
 				}
 				if (bounds.contains(x, y)) {
-
+					handleClickOnField(item, i, j);
 				}
+			}
+		}
+
+		renderAll();
+	}
+
+	void handleClickOnField(Field* item, int x, int y)
+	{
+		map[x][y]->type = PLAYER1;
+
+		for (Player* player : listOfPlayer)
+		{
+			if (player->type == item->type)
+			{
+				Position pos = Position{ x, y };
+
+				player->makeMove(pos, map);
+
+				sf::Text* clickText = new sf::Text(std::to_string(x) + "  " + std::to_string(y), font.get());
+				clickText->setFillColor(sf::Color::Green);
+				clickText->setPosition(400.f, 10.f);
+				objectsToDraw.push_back(clickText);
+				
 			}
 		}
 	}
 
-	void renderAll() {
+	void renderAll()
+	{
 		renderButtons();
 		renderUsers();
 
-		for (auto drawable : objectsToDraw) {
+		for (auto drawable : objectsToDraw)
+		{
 			window.draw(*drawable);
 		}
 	}
 
-	void renderButtons() {
+	void renderButtons()
+	{
 		const int rowSpacing = HEX_SIZE * std::sqrt(3) / 2;
 		const int topSpace = SIZE_OF_USER_FIELD_STATE * listOfPlayer.size() + 30;
-		
-		for (auto drawable : objectsToDraw) {
-			window.draw(*drawable);
-		}
 
-		for (int row = 0; row < map.size(); ++row) {
+		for (int row = 0; row < map.size(); ++row)
+		{
 			float x = LEFT_SPACE;
-			for (int col = 0; col < map[row].size(); ++col) {
+			for (int col = 0; col < map[row].size(); ++col)
+			{
 				float y = HEX_SIZE * row + topSpace;
 				int space = HEX_SIZE + rowSpacing;
 
-				if (map[row].size() < size && col == 0) {
+				if (map[row].size() < size && col == 0)
+				{
 					x += space * (size - map[row].size());
 				}
-				else if (col > 0) {
+				else if (col > 0)
+				{
 					x += space * 2;
 				}
-				window.draw(*map[row][col].render(x, y));
+				window.draw(*map[row][col]->render(x, y));
 			}
 		}
-
 	}
 
-	void renderUsers() {
+	void renderUsers()
+	{
 		for (size_t i = 0; i < listOfPlayer.size(); i++)
 		{
 			window.draw(listOfPlayer[i]->render());
@@ -193,4 +244,4 @@ public:
 	}
 };
 
-#endif 
+#endif

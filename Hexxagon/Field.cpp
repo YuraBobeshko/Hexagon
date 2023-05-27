@@ -13,28 +13,24 @@ class Field
 {
 public:
     TypeOfField type;
-    bool selected;
+    TypesOfSelection selection;
     sf::ConvexShape* item;
-    Field() : type(TypeOfField::EMPTY), selected(false) {}
+    Field() : type(TypeOfField::EMPTY), selection(UNSELECTED) {}
 
-    Field(TypeOfField t, bool s)
+    Field(TypeOfField t, TypesOfSelection s)
     {
         type = t;
-        selected = s;
+        selection = s;
         item = createHexagon();
 
     }
 
     std::string getName() {
-        if (selected) {
-            return "[" + std::to_string(type) + "]";
-        }
-        else {
-            return "" + std::to_string(type) + "";
-        }
+         return "" + std::to_string(type) + "";
     }
 
     sf::ConvexShape* render(int x, int y) {
+        item = createHexagon();
         item->setPosition(x, y);
 
         return item;
@@ -48,12 +44,15 @@ public:
         hexagon->setPoint(3, sf::Vector2f(-HEX_SIZE, 0));
         hexagon->setPoint(4, sf::Vector2f(-HEX_SIZE / 2, -HEX_HEIGHT / 2));
         hexagon->setPoint(5, sf::Vector2f(HEX_SIZE / 2, -HEX_HEIGHT / 2));
+        hexagon->setFillColor(getColor());
+
+        hexagon->setOutlineThickness(5.f);
+        hexagon->setOutlineColor(getColorForOutline());
 
         return hexagon;
     }
 
-
-    sf::Color getColor(TypeOfField type) {
+    sf::Color getColor() {
         switch (type) {
         case EMPTY:
             return sf::Color::White;
@@ -75,6 +74,20 @@ public:
             return sf::Color::Red;
         }
     }
+
+    sf::Color getColorForOutline() {
+        switch (selection) {
+        case UNSELECTED:
+            return sf::Color::Black;
+        case SELECTED:
+            return sf::Color::Green;
+        case POSSIBLE_TO_MOVE:
+            return sf::Color::Blue;
+        default:
+            return sf::Color::Black;
+        }
+    }
+  
 };
 
 #endif 

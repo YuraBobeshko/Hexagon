@@ -27,4 +27,11 @@ enum PlayerTypes
    BOT,
 };
 
+enum TypesOfSelection
+{
+    UNSELECTED,
+    SELECTED,
+    POSSIBLE_TO_MOVE
+};
+
 #endif // MY_ENUMS_H

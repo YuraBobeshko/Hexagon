@@ -13,4 +13,10 @@ struct DrawableItem
 	sf::Text* item;
 };
 
+struct Position
+{
+	int x;
+	int y;
+};
+
 #endif // MY_ENUMS_H
