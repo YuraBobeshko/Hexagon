@@ -31,6 +31,8 @@ private:
 
 	int size;
 
+	int activePlayer = 0;
+
 public:
 	Board(int s, std::vector<Player*> l)
 	{
@@ -110,24 +112,31 @@ public:
 
 	void setPlayersVec()
 	{
-		switch (listOfPlayer.size())
+		int realSize = size - 1;
+
+		int horisontalSize = size;
+		horisontalSize += (horisontalSize - 1);
+		horisontalSize += horisontalSize;
+
+		int playerID = 0;
+
+		std::vector<Position> listPosition = {
+			Position{0, 0},
+			Position{realSize, 0},
+			Position{realSize, realSize},
+			Position{realSize * 3, 0},
+			Position{realSize * 3, realSize},
+			Position{horisontalSize - 2, 0},
+		};
+
+		for (int i = 0; i < listPosition.size(); i++)
 		{
-		case 2:
-			map[0][0] = new Field(TypeOfField::PLAYER1, UNSELECTED);
-			map[size - 1][0] = new Field(TypeOfField::PLAYER1, UNSELECTED);
-			map[size - 1][map[size - 1].size() - 1] = new Field(TypeOfField::PLAYER2, UNSELECTED);
-			break;
-
-		case 3:
-
-			break;
-
-		case 6:
-
-			break;
-
-		default:
-			break;
+			Position position = listPosition[i];
+			if (listOfPlayer.size() <= playerID) {
+				playerID = 0;
+			}
+			map[position.x][position.y]->type = listOfPlayer[playerID]->type;
+			playerID++;
 		}
 	}
 
