@@ -217,6 +217,12 @@ public:
 
 	void renderAll()
 	{
+		int winnerId = checkWinner();
+		if (winnerId != -1) {
+			window.draw(listOfPlayer[winnerId]->render(map));
+			return;
+		}
+
 		renderButtons();
 		renderUsers();
 
@@ -254,10 +260,58 @@ public:
 
 	void renderUsers()
 	{
-		for (size_t i = 0; i < listOfPlayer.size(); i++)
+		for (int i = 0; i < listOfPlayer.size(); i++)
 		{
-			window.draw(listOfPlayer[i]->render());
+			if (listOfPlayer[i]->getScore(map) != 0) {
+				window.draw(listOfPlayer[i]->render(map));
+			}
 		}
+	}
+
+	int checkWinner() {
+		int userId = -1;
+		int emptyFields = 0;
+
+		std::vector<Player*> exsitingPlayer;
+
+		for (int i = 0; i < map.size(); i++)
+		{
+			for (int j = 0; j < map[i].size(); j++)
+			{
+				if (map[i][j]->type == EMPTY) {
+					emptyFields++;
+					break;
+				}
+			}
+		}
+
+		if (emptyFields == 0) {
+			int maxFields = 0;
+
+			for (int i = 0; i < listOfPlayer.size(); i++)
+			{
+				if (maxFields < listOfPlayer[i]->getScore(map)) {
+					maxFields = listOfPlayer[i]->getScore(map);
+					userId = i;
+				}
+			}
+
+			return userId;
+		}
+
+		for (int i = 0; i < listOfPlayer.size(); i++)
+		{
+			if (listOfPlayer[i]->getScore(map) != 0) {
+				exsitingPlayer.emplace_back(listOfPlayer[i]);
+				userId = i;
+			}
+		}
+
+		if (exsitingPlayer.size() == 1) {
+			return userId;
+		}
+
+		return -1;
 	}
 };
 

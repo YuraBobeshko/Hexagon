@@ -28,8 +28,8 @@ public:
         playerType = p;
 	}
 
-	sf::Text render() {
-		sf::Text text(getFieldName(type), font.get(), FONT_SIZE_OF_USER_FIELD_STATE);
+	sf::Text render(const std::vector<std::vector<Field*>>& map) {
+		sf::Text text(getFieldName(type) + " Score: " + std::to_string(getScore(map)), font.get(), FONT_SIZE_OF_USER_FIELD_STATE);
 		text.setPosition(10.f, SIZE_OF_USER_FIELD_STATE * (type - 1));
 		text.setFillColor(sf::Color::Red);
 
@@ -56,6 +56,22 @@ public:
             return "Unknown";
         }
     }
+
+  int getScore(const std::vector<std::vector<Field*>>& map)
+   {
+       int count = 0;
+       for (int i = 0; i < map.size(); i++)
+       {
+           for (int j = 0; j < map[i].size(); j++)
+           {
+               if (map[i][j]->type == type) {
+                   count++;
+               }
+           }
+       }
+
+       return count;
+   }
 
    bool makeMove(Position p, std::vector<std::vector<Field*>>& map) {
        bool isNextPlayer = false;
