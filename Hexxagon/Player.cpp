@@ -73,15 +73,83 @@ public:
            break;
        case POSSIBLE_TO_MOVE:
            isNextPlayer = true;
-           map[p.x][p.y]->selection = UNSELECTED;
            map[p.x][p.y]->type = type;
+
+           Position mainP = findMainP(map);
+
+           std::vector<Position> closePosition = getCloseFields(mainP, map);
+
+           if (!checkLocationInCloseFields(p, closePosition)) {
+               map[mainP.x][mainP.y]->type = EMPTY;
+           }
+
+           takePosition(getCloseFields(p, map), map);
+
            unselect(map);
-           break;
-       default:
            break;
        }
 
        return isNextPlayer;
+   }
+
+   std::vector<Position> getCloseFields(Position p, const std::vector<std::vector<Field*>>& map) {
+       Position firstTop = Position{ p.x - 2, getYPosition(p, Position{p.x - 2, p.y}, map) };
+
+       Position firstRightTop = Position{ p.x - 1 , getTopSidePosition(p, map) + 1 };
+       Position firstLeftTop = Position{ p.x - 1, getTopSidePosition(p, map) };
+
+
+       Position firstBottom = Position{ p.x + 2, getYPosition(p, Position{p.x + 2, p.y}, map) };
+
+       Position firstRightBottom = Position{ p.x + 1 , getYRightBottomPosition(p, map) + 1 };
+       Position firstLeftBottom = Position{ p.x + 1, getYRightBottomPosition(p, map) };
+
+
+
+       std::vector<Position> moves = {
+           firstTop, 
+           firstBottom, 
+           firstRightBottom, firstLeftBottom,
+           firstRightTop, firstLeftTop,
+       };
+
+       return moves;
+   }
+
+   bool checkLocationInCloseFields(Position p, std::vector<Position> closePositions) {
+       for (int i = 0; i < closePositions.size(); i++)
+       {
+           Position currentP = closePositions[i];
+           if (currentP.x == p.x && currentP.y == p.y) {
+               return true;
+           }
+       }
+       return false;
+   }
+
+   void takePosition(std::vector<Position> positions, std::vector<std::vector<Field*>>& map) {
+       for (int i = 0; i < positions.size(); i++)
+       {
+           Position p = positions[i];
+           
+           if (checkBounds(map, p) && !(map[p.x][p.y]->type == EMPTY) && !(map[p.x][p.y]->type == BLOCKED)) {
+               map[p.x][p.y]->type = type;
+           }
+       }
+   }
+
+   Position findMainP(std::vector<std::vector<Field*>>& map) {
+       for (int i = 0; i < map.size(); i++)
+       {
+           for (int j = 0; j < map[i].size(); j++)
+           {
+               if (map[i][j]->selection == SELECTED) {
+                   return Position{ i, j };
+               }
+           }
+       }
+
+       return Position{ -1, -1 };
    }
 
    void selectPossibleMoves(Position p, std::vector<std::vector<Field*>>& map) {
@@ -138,7 +206,7 @@ public:
        }
    }
 
-   int getYPosition(Position oldP, Position newP, std::vector<std::vector<Field*>>& map) {
+   int getYPosition(Position oldP, Position newP, const std::vector<std::vector<Field*>>& map) {
 
        if (!checkBounds(map, newP)) {
            Position updatedP = Position{ newP.x, newP.y - 1 };
@@ -182,7 +250,7 @@ public:
        return Position{ oldP.x - 2, getYPosition(oldP, Position{oldP.x - 2, oldP.y}, map) };
    }
 
-   int getYRightBottomPosition(Position oldP, std::vector<std::vector<Field*>>& map) {
+   int getYRightBottomPosition(Position oldP, const std::vector<std::vector<Field*>>& map) {
        int size = 5;
 
        if (map[oldP.x].size() >= size)
@@ -211,7 +279,7 @@ public:
        }
    }
 
-   int getTopSidePosition(Position oldP, std::vector<std::vector<Field*>>& map) {
+   int getTopSidePosition(Position oldP, const std::vector<std::vector<Field*>>& map) {
        int size = 5;
 
        if (map[oldP.x].size() >= size)
@@ -259,7 +327,6 @@ public:
            return false;
        }
    }
-
 };
 
 #endif // MY_ENUMS_H

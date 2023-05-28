@@ -53,6 +53,10 @@ public:
     }
 
     sf::Color getColor() {
+        return getColor(type);
+    }
+
+   static sf::Color getColor(TypeOfField type) {
         switch (type) {
         case EMPTY:
             return sf::Color::White;
