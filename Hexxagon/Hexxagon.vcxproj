@@ -133,20 +133,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bot.cpp" />
-    <ClCompile Include="Enums.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="Font.cpp" />
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Hexxagon.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Struct.cpp" />
-    <ClCompile Include="Window.cpp" />
-    <ClCompile Include="Сonstants.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bot.h" />
-    <ClInclude Include="Constans.h" />
+    <ClInclude Include="Constants.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="Field.h" />
     <ClInclude Include="Font.h" />
@@ -154,7 +150,6 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Struct.h" />
-    <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

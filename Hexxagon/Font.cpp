@@ -1,24 +1,13 @@
-#include <SFML/Graphics.hpp>
+#include "Font.h"
 
-class MyFont
+MyFont::MyFont()
 {
-public:
-    sf::Font font;
-
-    MyFont() {
-        if (!font.loadFromFile("../fonts/Tylko-Regular.ttf")) {
-            // Обработка ошибки загрузки шрифта
-        }
+    if (!font.loadFromFile("../fonts/Tylko-Regular.ttf")) {
+        // Handle font loading error
     }
+}
 
-    sf::Font& get() {
-        return font;
-    }
-
-private:
-};
-
-
-
-
-
+sf::Font& MyFont::get()
+{
+    return font;
+}
