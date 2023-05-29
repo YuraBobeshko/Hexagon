@@ -2,7 +2,7 @@
 
 Field::Field() : type(TypeOfField::EMPTY), selection(TypesOfSelection::UNSELECTED), item(nullptr) {}
 
-Field::Field(TypeOfField t, TypesOfSelection s) : type(t), selection(s), item(nullptr) {}
+Field::Field(TypeOfField t, TypesOfSelection s, Position p) : type(t), selection(s), position(p), item(nullptr) {}
 
 std::string Field::getName() const {
     return std::to_string(static_cast<int>(type));

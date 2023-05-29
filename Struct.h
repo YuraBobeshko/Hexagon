@@ -1,8 +1,6 @@
-#ifndef DRAWABLEITEM_H
-#define DRAWABLEITEM_H
+#ifndef STRUCT_H
+#define STRUCT_H
 
-#include <SFML/Graphics.hpp>
-#include "Enums.h"
 
 struct DrawableItem
 {
@@ -18,4 +16,4 @@ struct Position
     int y;
 };
 
-#endif // DRAWABLEITEM_H
+#endif // STRUCT_H

@@ -2,19 +2,23 @@
 #define FIELD_H
 
 #include <string>
+
 #include <SFML/Graphics.hpp>
+
 #include "Enums.h"
 #include "Constants.h"
+#include "Struct.h"
 
 class Field
 {
 public:
     TypeOfField type;
     TypesOfSelection selection;
+    Position position;
     sf::ConvexShape* item;
 
     Field();
-    Field(TypeOfField t, TypesOfSelection s);
+    Field(TypeOfField t, TypesOfSelection s, Position p);
     std::string getName() const;
     sf::ConvexShape* render(int x, int y);
 

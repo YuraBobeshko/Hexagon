@@ -4,10 +4,14 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <utility>
+
 #include <SFML/Graphics.hpp>
+
 #include "Field.h"
 #include "Player.h"
 #include "Font.h"
+
 #include "Enums.h"
 #include "Constants.h"
 #include "Struct.h"

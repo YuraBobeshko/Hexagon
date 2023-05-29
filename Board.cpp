@@ -1,7 +1,5 @@
 #include "Board.h"
 
-#include <utility>
-
 Board::Board(int s, std::vector<Player*> l)
 {
     size = s;
@@ -56,7 +54,7 @@ void Board::fillVec()
     {
         for (int j = 0; j < map[i].size(); j++)
         {
-            auto* field = new Field(TypeOfField::EMPTY, UNSELECTED);
+            auto* field = new Field(TypeOfField::EMPTY, UNSELECTED , Position{i, j});
             map[i][j] = field;
         }
     }
@@ -70,10 +68,15 @@ void Board::setEmptyVec()
     int midX = size + size - 2;
     int midY = map[midX].size() / 2;
 
-    auto* field = new Field(BLOCKED, UNSELECTED);
-    map[midX - 2][midY] = field;
-    map[midX + 1][midY] = field;
-    map[midX + 1][midY + (size % 2 == 0 ? +1 : -1)] = field;
+    int firstX = midX - 2;
+    map[midX - 2][midY] = new Field(BLOCKED, UNSELECTED, Position{firstX,midY});
+
+    int secondX = midX + 1;
+    map[secondX][midY] = new Field(BLOCKED, UNSELECTED, Position{secondX, midY});
+
+    int thirdX = midX + 1;
+    int thirdY = midY + (size % 2 == 0 ? +1 : -1);
+    map[thirdX][thirdY] = new Field(BLOCKED, UNSELECTED, Position{thirdX, thirdY});
 }
 
 void Board::setPlayersVec()
