@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="Hexxagon" targetName="sfml-audio" />
+      <config projectName="Hexxagon" targetName="sfml-graphics" />
+      <config projectName="Hexxagon" targetName="sfml-network" />
+      <config projectName="Hexxagon" targetName="Hexxagon" />
+      <config projectName="Hexxagon" targetName="sfml-main" />
+      <config projectName="Hexxagon" targetName="sfml-system" />
+      <config projectName="Hexxagon" targetName="sfml-window" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c77bfabd-cd9a-4d69-a0d4-2eb76ea2fab0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Hexxagon.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/.idea/Hexxagon.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Board.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Board.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Bot.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Bot.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Constants.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Constants.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Enums.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Field.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Field.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Font.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Font.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Game.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Game.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Hexxagon.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Hexxagon.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Hexxagon.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Player.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Player.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Struct.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/Window.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/openal32.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/sfml-audio-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/sfml-audio-d-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/sfml-graphics-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/sfml-graphics-d-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/sfml-network-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/sfml-network-d-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/sfml-system-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/sfml-system-d-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/sfml-window-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hexxagon/sfml-window-d-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-abc66f4af61ecf9d48b2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-78b6b1d6f53895f2aef8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-10321432bdb3a6522152.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-05-28T16-25-31-0591.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Hexxagon-Debug-19db597a6cb4778d77fd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.25.2/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_VOID_PTR.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_VOID_PTR.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Hexxagon.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Hexxagon.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/sfml-subbuild/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/sfml-subbuild/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/sfml-subbuild/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/sfml-subbuild/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/sfml-subbuild/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/sfml-subbuild/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Tylko-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Tylko-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/__MACOSX/._Tylko-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/__MACOSX/._Tylko-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/__MACOSX/._Tylko-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/AlResource_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Audio_2Export_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Audio_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/BlendMode_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/CircleShape_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Clipboard_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Clock_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Color_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Config_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/ContextSettings_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Context_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/ConvexShape_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Cursor_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Drawable_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Err_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Event_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/FileInputStream_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Font_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Ftp_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/GlResource_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Glsl_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Glyph_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/GpuPreference_8hpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/GpuPreference_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Graphics_2Export_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Graphics_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Http_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Image_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/InputSoundFile_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/InputStream_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/IpAddress_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Joystick_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Keyboard_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Listener_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Lock_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Main_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/MemoryInputStream_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Mouse_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Music_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Mutex_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/NativeActivity_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Network_2Export_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Network_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/NonCopyable_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/OpenGL_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/OutputSoundFile_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Packet_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/PrimitiveType_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Rect_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/RectangleShape_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/RenderStates_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/RenderTarget_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/RenderTexture_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/RenderWindow_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Sensor_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Shader_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Shape_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Sleep_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/SocketHandle_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/SocketSelector_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Socket_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/SoundBufferRecorder_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/SoundBuffer_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/SoundFileFactory_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/SoundFileReader_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/SoundFileWriter_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/SoundRecorder_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/SoundSource_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/SoundStream_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Sound_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Sprite_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/String_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/System_2Export_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/System_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/TcpListener_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/TcpSocket_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Text_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Texture_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/ThreadLocalPtr_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/ThreadLocal_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Thread_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Time_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Touch_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Transform_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Transformable_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/UdpSocket_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Utf_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Vector2_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Vector3_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/VertexArray_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/VertexBuffer_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Vertex_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/VideoMode_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/View_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/WindowHandle_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/WindowStyle_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Window_2Export_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Window_2Window_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/Window_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/annotated.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/bc_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/bdwn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1AlResource-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1AlResource.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1AlResource.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1CircleShape-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1CircleShape.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1CircleShape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Clipboard-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Clipboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Clock-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Clock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Color-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Color.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Context-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Context.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Context.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1ConvexShape-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1ConvexShape.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1ConvexShape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Cursor-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Cursor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Cursor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Drawable-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Drawable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Drawable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Event-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1FileInputStream-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1FileInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1FileInputStream.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Font-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Font.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp_1_1DirectoryResponse-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp_1_1DirectoryResponse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp_1_1DirectoryResponse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp_1_1ListingResponse-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp_1_1ListingResponse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp_1_1ListingResponse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp_1_1Response-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp_1_1Response.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Ftp_1_1Response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1GlResource-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1GlResource.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1GlResource.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1GlResource_1_1TransientContextLock-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1GlResource_1_1TransientContextLock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1GlResource_1_1TransientContextLock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Glyph-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Glyph.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Http-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Http.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Http.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Http_1_1Request-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Http_1_1Request.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Http_1_1Response-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Http_1_1Response.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Image-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1InputSoundFile-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1InputSoundFile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1InputSoundFile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1InputStream-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1InputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1InputStream.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1IpAddress-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1IpAddress.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Joystick-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Joystick.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Keyboard-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Keyboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Listener-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Listener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Lock-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Lock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1MemoryInputStream-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1MemoryInputStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1MemoryInputStream.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Mouse-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Mouse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Music-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Music.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Mutex-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Mutex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Mutex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1NonCopyable-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1NonCopyable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1NonCopyable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1OutputSoundFile-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1OutputSoundFile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1OutputSoundFile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Packet-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Packet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Rect-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Rect.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RectangleShape-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RectangleShape.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RectangleShape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderStates-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderStates.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderTarget-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderTarget.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderTarget.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderTexture-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderTexture.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderTexture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderWindow-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderWindow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1RenderWindow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Sensor-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Sensor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Shader-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Shader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Shader.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Shape-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Shape.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Socket-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Socket.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Socket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SocketSelector-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SocketSelector.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Sound-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Sound.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Sound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundBuffer-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundBuffer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundBuffer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundBufferRecorder-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundBufferRecorder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundBufferRecorder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundFileFactory-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundFileFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundFileReader-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundFileReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundFileWriter-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundFileWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundRecorder-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundRecorder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundRecorder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundSource-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundSource.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundSource.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundStream-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundStream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1SoundStream.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Sprite-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Sprite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1String-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1String.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1TcpListener-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1TcpListener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1TcpListener.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1TcpSocket-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1TcpSocket.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1TcpSocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Text-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Texture-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Texture.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Texture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Thread-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Thread.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Thread.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1ThreadLocal-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1ThreadLocal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1ThreadLocal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1ThreadLocalPtr-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1ThreadLocalPtr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1ThreadLocalPtr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Time-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Time.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Touch-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Touch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Transform-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Transform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Transformable-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Transformable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Transformable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1UdpSocket-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1UdpSocket.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1UdpSocket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Utf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Utf_3_0116_01_4-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Utf_3_0116_01_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Utf_3_0132_01_4-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Utf_3_0132_01_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Utf_3_018_01_4-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Utf_3_018_01_4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Vector2-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Vector2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Vector3-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Vector3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Vertex-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Vertex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1VertexArray-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1VertexArray.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1VertexArray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1VertexBuffer-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1VertexBuffer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1VertexBuffer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1VideoMode-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1VideoMode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1View-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1View.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Window-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Window.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/classsf_1_1Window.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/closed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/deprecated.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/dir_5cf786e58cbf7297a26339ae6e44357c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/dir_83d50c0b1f1eceb6f182949162e90861.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/dir_89e9fb32471ae291b179a889144513db.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/dir_c0a853e81d6f1c1f0a3eb7a27dc24256.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/dir_d44c64559bbebec7f509842c48db8b23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/dir_dd49ddb3ba8035e4a328f8c5f31cda7e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/dir_e68e8157741866f444e17edd764ebbae.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/dir_e71ec51a9abd604c65f6abb639f6ea75.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/doxygen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/doxygen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/dynsections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/folderclosed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/folderopen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_0x7e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_d.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_enum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_d.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_f.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_g.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_i.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_j.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_k.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_l.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_m.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_n.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_o.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_p.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_q.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_r.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_s.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_t.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_u.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_v.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_w.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_x.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_y.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_eval_z.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_f.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_0x7e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_d.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_f.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_g.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_i.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_k.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_l.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_m.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_n.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_o.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_p.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_r.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_s.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_t.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_u.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_v.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_w.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_func_z.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_g.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_h.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_i.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_j.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_k.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_l.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_m.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_n.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_o.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_p.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_q.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_r.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_rela.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_s.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_t.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_type.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_u.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_v.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_vars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_w.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_x.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_y.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/functions_z.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/globals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/globals_defs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/group__audio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/group__graphics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/group__network.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/group__system.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/group__window.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/hierarchy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/mainpage_8hpp_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/menudata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/namespacemembers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/namespacemembers_type.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/namespaces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/namespacesf_1_1Glsl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/nav_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/nav_g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/nav_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/pages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/splitbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1BlendMode-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1BlendMode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1ContextSettings-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1ContextSettings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1JoystickButtonEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1JoystickButtonEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1JoystickConnectEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1JoystickConnectEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1JoystickMoveEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1JoystickMoveEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1KeyEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1KeyEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1MouseButtonEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1MouseButtonEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1MouseMoveEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1MouseMoveEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1MouseWheelEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1MouseWheelEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1MouseWheelScrollEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1MouseWheelScrollEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1SensorEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1SensorEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1SizeEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1SizeEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1TextEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1TextEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1TouchEvent-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Event_1_1TouchEvent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Font_1_1Info-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Font_1_1Info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Joystick_1_1Identification-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Joystick_1_1Identification.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Music_1_1Span-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Music_1_1Span.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1Shader_1_1CurrentTextureType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1SoundFileReader_1_1Info-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1SoundFileReader_1_1Info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1SoundStream_1_1Chunk-members.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/structsf_1_1SoundStream_1_1Chunk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/sync_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/sync_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/tab_a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/tab_b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/tab_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/tab_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/doc/html/tabs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/ftp/Ftp.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/ftp/ftp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/island/Island.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/island/island.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/island/resources/sansation.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/island/resources/terrain.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/island/resources/terrain.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/joystick/Joystick.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/joystick/joystick.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/joystick/resources/sansation.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/opengl/OpenGL.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/opengl/opengl.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/opengl/resources/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/opengl/resources/sansation.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/opengl/resources/texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/pong/Pong.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/pong/pong.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/pong/resources/ball.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/pong/resources/sansation.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/Effect.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/Shader.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/billboard.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/billboard.geom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/billboard.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/blink.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/blur.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/devices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/edge.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/pixelate.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/sansation.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/sfml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/storm.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/text-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/resources/wave.vert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/shader/shader.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sockets/Sockets.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sockets/TCP.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sockets/UDP.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sockets/sockets.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sound-capture/SoundCapture.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sound-capture/sound-capture.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sound/Sound.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sound/resources/canary.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sound/resources/ding.flac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sound/resources/orchestral.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/sound/sound.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/voip/Client.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/voip/Server.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/voip/VoIP.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/voip/voip.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/window/Window.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/examples/window/window.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/AlResource.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/Export.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/Listener.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/Music.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/Sound.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Config.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/GpuPreference.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/CircleShape.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Color.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/ConvexShape.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Drawable.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Export.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Font.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Glsl.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Glsl.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Glyph.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Image.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/PrimitiveType.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Rect.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Rect.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/RectangleShape.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/RenderStates.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/RenderTarget.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/RenderTexture.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/RenderWindow.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Shader.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Shape.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Sprite.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Text.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Texture.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Transform.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Transformable.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/Vertex.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/VertexArray.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Graphics/View.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Main.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/Export.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/Ftp.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/Http.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/IpAddress.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/Packet.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/Socket.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/SocketHandle.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/SocketSelector.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/TcpListener.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/TcpSocket.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Network/UdpSocket.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/OpenGL.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Clock.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Err.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Export.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/FileInputStream.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/InputStream.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Lock.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/MemoryInputStream.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Mutex.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/NativeActivity.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/NonCopyable.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Sleep.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/String.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/String.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Thread.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Thread.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/ThreadLocal.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Time.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Utf.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Utf.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Vector2.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Vector2.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Vector3.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/System/Vector3.inl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Clipboard.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Context.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/ContextSettings.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Cursor.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Event.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Export.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/GlResource.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Joystick.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Keyboard.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Mouse.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Sensor.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Touch.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/VideoMode.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/Window.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-debug.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-debug.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-release.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/flac.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/freetype.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/ogg.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/openal32.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-audio-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-audio-s-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-audio-s.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-audio.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-graphics-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-graphics-s-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-graphics-s.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-graphics.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-main-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-main.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-network-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-network-s-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-network-s.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-network.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-system-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-system-s-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-system-s.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-system.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-window-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-window-s-d.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-window-s.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/sfml-window.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/vorbis.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/vorbisenc.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/lib/vorbisfile.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/SFML-2.5.1/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openal32.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/2Sazha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/Sazha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfml-audio-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfml-audio-d-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfml-graphics-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfml-graphics-d-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfml-network-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfml-network-d-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfml-system-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfml-system-d-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfml-window-2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfml-window-d-2.dll" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="CMake Application.Hexxagon">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Hexxagon" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Hexxagon" TARGET_NAME="Hexxagon" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Hexxagon" RUN_TARGET_NAME="Hexxagon">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-audio" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Hexxagon" TARGET_NAME="sfml-audio" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-graphics" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Hexxagon" TARGET_NAME="sfml-graphics" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Hexxagon" TARGET_NAME="sfml-main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-network" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Hexxagon" TARGET_NAME="sfml-network" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-system" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Hexxagon" TARGET_NAME="sfml-system" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-window" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Hexxagon" TARGET_NAME="sfml-window" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Hexxagon" />
+      <item itemvalue="CMake Application.sfml-audio" />
+      <item itemvalue="CMake Application.sfml-graphics" />
+      <item itemvalue="CMake Application.sfml-main" />
+      <item itemvalue="CMake Application.sfml-network" />
+      <item itemvalue="CMake Application.sfml-system" />
+      <item itemvalue="CMake Application.sfml-window" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c77bfabd-cd9a-4d69-a0d4-2eb76ea2fab0" name="Changes" comment="" />
+      <created>1685378396374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685378396374</updated>
+      <workItem from="1685378397968" duration="964000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+</project>
