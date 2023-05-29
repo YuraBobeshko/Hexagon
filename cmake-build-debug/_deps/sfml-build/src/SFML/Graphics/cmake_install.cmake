@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-src/src/SFML/Graphics
+# Install script for directory: C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-src/src/SFML/Graphics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Hexxagon")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Hexagon")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-build/lib/libsfml-graphics-s-d.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-build/lib/libsfml-graphics-s-d.a")
 endif()
 

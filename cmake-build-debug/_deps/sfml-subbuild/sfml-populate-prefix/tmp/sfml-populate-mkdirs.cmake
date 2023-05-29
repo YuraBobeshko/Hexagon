@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-src"
-  "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-build"
-  "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix"
-  "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/tmp"
-  "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp"
-  "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src"
-  "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp"
+  "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-src"
+  "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-build"
+  "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix"
+  "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/tmp"
+  "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp"
+  "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src"
+  "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-subbuild/sfml-populate-prefix/src/sfml-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

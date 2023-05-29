@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-src
+# Install script for directory: C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Hexxagon")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Hexagon")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,30 +38,30 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-src/include" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.inl$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-src/include" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.inl$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-src/license.md")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-src/license.md")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-src/readme.md")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-src/readme.md")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./bin" TYPE DIRECTORY FILES "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-src/extlibs/bin/x64/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./bin" TYPE DIRECTORY FILES "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-src/extlibs/bin/x64/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./lib" TYPE DIRECTORY FILES "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./lib" TYPE DIRECTORY FILES "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLStaticTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLStaticTargets.cmake"
-         "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-build/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLStaticTargets.cmake")
+         "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-build/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLStaticTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLStaticTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -74,23 +74,23 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-build/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLStaticTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-build/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLStaticTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-build/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLStaticTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-build/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLStaticTargets-debug.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES
-    "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-build/SFMLConfig.cmake"
-    "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-build/SFMLConfigDependencies.cmake"
-    "C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-build/SFMLConfigVersion.cmake"
+    "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-build/SFMLConfig.cmake"
+    "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-build/SFMLConfigDependencies.cmake"
+    "C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-build/SFMLConfigVersion.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/gorob/Desktop/Hexxagon/cmake-build-debug/_deps/sfml-build/src/SFML/cmake_install.cmake")
+  include("C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-build/src/SFML/cmake_install.cmake")
 
 endif()
 
