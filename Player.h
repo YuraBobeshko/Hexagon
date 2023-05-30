@@ -29,7 +29,7 @@ public:
     bool makeMove(Position p, std::vector<std::vector<Field*>>& map);
     std::vector<Position> getCloseFields(Position p, const std::vector<std::vector<Field*>>& map);
     static bool checkLocationInCloseFields(Position p, const std::vector<Position>& closePositions);
-    void takePosition(std::vector<Position> positions, std::vector<std::vector<Field*>>& map);
+    void takePosition(Position mainP, Position selected, std::vector<std::vector<Field*>>& map);
     static Position findMainP(std::vector<std::vector<Field*>>& map);
     void selectPossibleMoves(Position p, std::vector<std::vector<Field*>>& map);
     int getYPosition(Position oldP, Position newP, const std::vector<std::vector<Field*>>& map);

@@ -68,15 +68,7 @@ bool Player::makeMove(Position p, std::vector<std::vector<Field*>>& map) {
         isNextPlayer = true;
         map[p.x][p.y]->type = type;
 
-        Position mainP = findMainP(map);
-
-        std::vector<Position> closePosition = getCloseFields(mainP, map);
-
-        if (!checkLocationInCloseFields(p, closePosition)) {
-            map[mainP.x][mainP.y]->type = EMPTY;
-        }
-
-        takePosition(getCloseFields(p, map), map);
+        takePosition(findMainP(map), p, map);
 
         unselect(map);
         break;
@@ -117,8 +109,13 @@ bool Player::checkLocationInCloseFields(Position p, const std::vector<Position>&
     return false;
 }
 
-void Player::takePosition(std::vector<Position> positions, std::vector<std::vector<Field*>>& map) {
-    for (auto p : positions)
+void Player::takePosition(Position mainP, Position selected, std::vector<std::vector<Field*>>& map) {
+    std::vector<Position> closePosition = getCloseFields(mainP, map);
+
+    if (!checkLocationInCloseFields(selected, closePosition)) {
+        map[mainP.x][mainP.y]->type = EMPTY;
+    }
+    for (auto p : getCloseFields(selected, map))
     {
         if (checkBounds(map, p) && map[p.x][p.y]->type != EMPTY && map[p.x][p.y]->type != BLOCKED) {
             map[p.x][p.y]->type = type;
