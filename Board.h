@@ -9,7 +9,7 @@
 #include <SFML/Graphics.hpp>
 
 #include "Field.h"
-#include "Player.h"
+#include "Bot.h"
 #include "Font.h"
 
 #include "Enums.h"
@@ -23,13 +23,13 @@ private:
     sf::Text text;
     MyFont font;
     std::vector<std::vector<Field*>> map;
-    std::vector<Player*> listOfPlayer;
+    std::vector<Bot*> listOfPlayer;
     std::vector<sf::Drawable*> objectsToDraw;
     int size;
     int activePlayer = 0;
 
 public:
-    Board(int s, std::vector<Player*> l);
+    Board(int s, std::vector<Bot*> l);
     void init();
     void createVec();
     void fillVec();

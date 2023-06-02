@@ -1,6 +1,6 @@
 #include "Board.h"
 
-Board::Board(int s, std::vector<Player*> l)
+Board::Board(int s, std::vector<Bot*> l)
 {
     size = s;
     listOfPlayer = std::move(l);
@@ -174,11 +174,19 @@ void Board::handleClickOnField(Field* item, int x, int y)
 }
 
 void Board::nextPlayer() {
+    renderAll();
+
     if (activePlayer + 1 >= listOfPlayer.size()) {
         activePlayer = 0;
     }
     else {
         activePlayer++;
+    }
+
+    if(listOfPlayer[activePlayer]->playerType == BOT) {
+        if(listOfPlayer[activePlayer]->makeAutoMove(map)) {
+            nextPlayer();
+        }
     }
 }
 

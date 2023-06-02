@@ -3,7 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <vector>
-#include "Player.h"
+#include "Bot.h"
 #include "Board.h"
 #include "Struct.h"
 #include "Enums.h"
@@ -15,7 +15,7 @@ private:
     sf::Text text;
     MyFont font;
     std::vector<DrawableItem*> objectsToDraw;
-    std::vector<Player*> listOfPlayer;
+    std::vector<Bot*> listOfPlayer;
 
 public:
     Game();

@@ -1,8 +1,8 @@
 #include "Game.h"
 
 Game::Game()
-    : listOfPlayer({new Player(TypeOfField(1), REAL_PLAYER),
-                    new Player(TypeOfField(2), BOT)}) {
+    : listOfPlayer({new Bot(TypeOfField(1), REAL_PLAYER),
+                    new Bot(TypeOfField(2), BOT)}) {
 
   init();
 }
@@ -84,7 +84,7 @@ void Game::handleClickOnCountOfUser(DrawableItem* elem) {
 
     for (int i = 0; i < listOfPlayer.size(); i++)
     {
-        auto* player = new Player(TypeOfField(i + 1), i == 0 ? REAL_PLAYER : BOT);
+        auto* player = new Bot(TypeOfField(i + 1), i == 0 ? REAL_PLAYER : BOT);
         listOfPlayer[i] = player;
     }
 }
@@ -94,7 +94,7 @@ void Game::handleClickOnUser(DrawableItem* elem) {
 
     Player* player = listOfPlayer[playerIndex];
 
-    listOfPlayer[playerIndex] = new Player(player->type, player->playerType == BOT ? REAL_PLAYER : BOT);
+    listOfPlayer[playerIndex] = new Bot(player->type, player->playerType == BOT ? REAL_PLAYER : BOT);
 }
 
 void Game::handleClickOnPlay() {

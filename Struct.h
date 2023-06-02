@@ -16,4 +16,12 @@ struct Position
     int y;
 };
 
+struct MoveAnalytic
+{
+    Position selected;
+    Position move;
+    int score;
+};
+
+
 #endif // STRUCT_H

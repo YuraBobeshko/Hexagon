@@ -1,3 +1,0 @@
-C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/sfml-populate.dir
-C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/edit_cache.dir
-C:/Users/gorob/Desktop/Hexagon/cmake-build-debug/_deps/sfml-subbuild/CMakeFiles/rebuild_cache.dir

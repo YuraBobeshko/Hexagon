@@ -50,7 +50,7 @@ int Player::getScore(const std::vector<std::vector<Field*>>& map) const
     return count;
 }
 
-bool Player::makeMove(Position p, std::vector<std::vector<Field*>>& map) {
+bool Player::makeMove(Position p, std::vector<std::vector<Field*>>& map) const {
     bool isNextPlayer = false;
 
     switch (map[p.x][p.y]->selection)
@@ -66,8 +66,6 @@ bool Player::makeMove(Position p, std::vector<std::vector<Field*>>& map) {
         break;
     case POSSIBLE_TO_MOVE:
         isNextPlayer = true;
-        map[p.x][p.y]->type = type;
-
         takePosition(findMainP(map), p, map);
 
         unselect(map);
@@ -77,7 +75,7 @@ bool Player::makeMove(Position p, std::vector<std::vector<Field*>>& map) {
     return isNextPlayer;
 }
 
-std::vector<Position> Player::getCloseFields(Position p, const std::vector<std::vector<Field*>>& map) {
+std::vector<Position> Player::getCloseFields(const Position p, const std::vector<std::vector<Field*>>& map) {
     auto firstTop = Position{ p.x - 2, getYPosition(p, Position{p.x - 2, p.y}, map) };
 
     auto firstRightTop = Position{ p.x - 1 , getTopSidePosition(p, map) + 1 };
@@ -96,10 +94,77 @@ std::vector<Position> Player::getCloseFields(Position p, const std::vector<std::
         firstRightTop, firstLeftTop,
     };
 
+    std::vector<Position> validMoves;
+
+    for (auto & move : moves) {
+        if(checkBounds(map, move)){
+            validMoves.emplace_back(move);
+        }
+    }
+
+    return validMoves;
+}
+
+std::vector<Position> Player::getSecondFields(const Position p, const std::vector<std::vector<Field*>>& map) {
+    auto firstRight = Position{ p.x , p.y + 1 };
+    auto firstLeft = Position{ p.x , p.y - 1 };
+
+    auto secondTop = Position{ p.x - 4, getYPosition(p, Position{p.x - 4, p.y}, map) };
+
+    auto firstRightTop = Position{ p.x - 1 , getTopSidePosition(p, map) + 1 };
+    auto firstLeftTop = Position{ p.x - 1, getTopSidePosition(p, map) };
+
+    auto secondRightTop = getTopPosition(firstRightTop, map);
+    auto secondLeftTop = getTopPosition(firstLeftTop, map);
+
+    auto thirdRightTop = getTopPosition(firstRight, map);
+    auto thirdLeftTop = getTopPosition(firstLeft, map);
+
+    auto secondBottom = Position{ p.x + 4, getYPosition(p, Position{p.x + 4, p.y}, map) };
+
+    auto firstRightBottom = Position{ p.x + 1 , getYRightBottomPosition(p, map) + 1 };
+    auto firstLeftBottom = Position{ p.x + 1, getYRightBottomPosition(p, map) };
+
+    auto secondRightBottom = getBottomPosition(firstRightBottom, map);
+    auto secondLeftBottom = getBottomPosition(firstLeftBottom, map);
+
+    auto thirdRightBottom = getBottomPosition(firstRight, map);
+    auto thirdLeftBottom = getBottomPosition(firstLeft, map);
+
+    std::vector<Position> moves = {
+            secondTop,
+            secondBottom,
+            firstRight, firstLeft,
+            secondRightBottom, secondLeftBottom,
+            secondRightTop, secondLeftTop,
+            thirdRightBottom, thirdLeftBottom,
+            thirdRightTop, thirdLeftTop
+    };
+
+    std::vector<Position> validMoves;
+
+    for (auto & move : moves) {
+        if(checkBounds(map, move)){
+            validMoves.emplace_back(move);
+        }
+    }
+
+    return validMoves;
+}
+
+std::vector<Position> Player::getAllFields(const Position p, const std::vector<std::vector<Field*>>& map) {
+    std::vector<Position> moves;
+    std::vector<Position> closeFields = getCloseFields(p, map);
+    std::vector<Position> secondFields = getSecondFields(p, map);
+
+    moves.reserve(closeFields.size() + secondFields.size());
+    moves.insert(moves.end(), closeFields.begin(), closeFields.end());
+    moves.insert(moves.end(), secondFields.begin(), secondFields.end());
+
     return moves;
 }
 
-bool Player::checkLocationInCloseFields(Position p, const std::vector<Position>& closePositions) {
+bool Player::checkLocationInCloseFields(const Position p, const std::vector<Position>& closePositions) {
     for (auto currentP : closePositions)
     {
         if (currentP.x == p.x && currentP.y == p.y) {
@@ -109,8 +174,10 @@ bool Player::checkLocationInCloseFields(Position p, const std::vector<Position>&
     return false;
 }
 
-void Player::takePosition(Position mainP, Position selected, std::vector<std::vector<Field*>>& map) {
+void Player::takePosition(const Position mainP, const Position selected, std::vector<std::vector<Field*>>& map) const {
     std::vector<Position> closePosition = getCloseFields(mainP, map);
+
+    map[selected.x][selected.y]->type = type;
 
     if (!checkLocationInCloseFields(selected, closePosition)) {
         map[mainP.x][mainP.y]->type = EMPTY;
@@ -137,45 +204,8 @@ Position Player::findMainP(std::vector<std::vector<Field*>>& map) {
     return Position{ -1, -1 };
 }
 
-void Player::selectPossibleMoves(Position p, std::vector<std::vector<Field*>>& map) {
-    auto firstRight = Position{ p.x , p.y + 1 };
-    auto firstLeft = Position{ p.x , p.y - 1 };
-
-    auto firstTop = Position{ p.x - 2, getYPosition(p, Position{p.x - 2, p.y}, map) };
-    auto secondTop = Position{ p.x - 4, getYPosition(p, Position{p.x - 4, p.y}, map) };
-
-    auto firstRightTop = Position{ p.x - 1 , getTopSidePosition(p, map) + 1 };
-    auto firstLeftTop = Position{ p.x - 1, getTopSidePosition(p, map) };
-
-    auto secondRightTop = getTopPosition(firstRightTop, map);
-    auto secondLeftTop = getTopPosition(firstLeftTop, map);
-
-    auto thirdRightTop = getTopPosition(firstRight, map);
-    auto thirdLeftTop = getTopPosition(firstLeft, map);
-
-    auto firstBottom = Position{ p.x + 2, getYPosition(p, Position{p.x + 2, p.y}, map) };
-    auto secondBottom = Position{ p.x + 4, getYPosition(p, Position{p.x + 4, p.y}, map) };
-
-    auto firstRightBottom = Position{ p.x + 1 , getYRightBottomPosition(p, map) + 1 };
-    auto firstLeftBottom = Position{ p.x + 1, getYRightBottomPosition(p, map) };
-
-    auto secondRightBottom = getBottomPosition(firstRightBottom, map);
-    auto secondLeftBottom = getBottomPosition(firstLeftBottom, map);
-
-    auto thirdRightBottom = getBottomPosition(firstRight, map);
-    auto thirdLeftBottom = getBottomPosition(firstLeft, map);
-
-    std::vector<Position> moves = {
-        firstTop, secondTop,
-        firstBottom, secondBottom,
-        firstRight, firstLeft,
-        firstRightBottom, firstLeftBottom,
-        secondRightBottom, secondLeftBottom,
-        thirdRightBottom, thirdLeftBottom,
-        thirdRightTop, thirdLeftTop,
-        firstRightTop, firstLeftTop,
-        secondRightTop, secondLeftTop
-    };
+void Player::selectPossibleMoves(const Position p, std::vector<std::vector<Field*>>& map) {
+    std::vector<Position> moves = getAllFields(p, map);
 
     for (auto & move : moves)
     {
@@ -222,11 +252,11 @@ int Player::getYPosition(const Position oldP, Position newP, const std::vector<s
     }
 }
 
-Position Player::getBottomPosition(const Position oldP, std::vector<std::vector<Field*>>& map) {
+Position Player::getBottomPosition(const Position oldP, const std::vector<std::vector<Field*>>& map) {
     return Position{ oldP.x + 2, getYPosition(oldP, Position{oldP.x + 2, oldP.y}, map) };
 }
 
-Position Player::getTopPosition(const Position oldP, std::vector<std::vector<Field*>>& map) {
+Position Player::getTopPosition(const Position oldP, const std::vector<std::vector<Field*>>& map) {
     return Position{ oldP.x - 2, getYPosition(oldP, Position{oldP.x - 2, oldP.y}, map) };
 }
 
