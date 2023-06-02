@@ -10,6 +10,6 @@ FetchContent_Declare(
         GIT_TAG 2.5.1
 )
 FetchContent_MakeAvailable(SFML)
-add_executable(Hexagon Hexagon.cpp Game.cpp Field.cpp Player.cpp Board.cpp Font.cpp Saver.cpp Struct.h)
+add_executable(Hexagon Hexagon.cpp Game.cpp Field.cpp Player.cpp Board.cpp Font.cpp Saver.cpp Bot.cpp)
 target_compile_definitions(Hexagon PRIVATE SFML_STATIC)    # SFML related
 target_link_libraries(Hexagon sfml-graphics sfml-audio sfml-network sfml-window sfml-system) # SFML related
